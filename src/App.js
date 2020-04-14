@@ -31,10 +31,10 @@ function App() {
       techs
     });
 
+    setTechs('');
+    setTitle('');
+    setUrl('');
     setRepositories([...reposistories, response.data])
-
-    console.log(response.data)
-
   }
 
   async function handleRemoveRepository(id) {
@@ -49,9 +49,9 @@ function App() {
     <div className="container">
     
     <div className="areaButtonAdd">
-        <input placeholder="Title" type="text" onChange={event => setTitle(event.target.value)} /> <br />
-        <input placeholder="URL" type="text" onChange={event => setUrl(event.target.value)} /> <br />
-        <input placeholder="Techs" type="text" onChange={event => setTechs(event.target.value)} /> <br />
+        <input value={title} placeholder="Title" type="text" onChange={event => setTitle(event.target.value)} /> <br />
+        <input value={url} placeholder="URL" type="text" onChange={event => setUrl(event.target.value)} /> <br />
+        <input value={techs} placeholder="Techs" type="text" onChange={event => setTechs(event.target.value)} /> <br />
         <button onClick={handleAddRepository}>Adicionar</button> <br />  <br />
       </div>
 
