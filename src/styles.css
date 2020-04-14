@@ -5,16 +5,32 @@
 }
 
 body {
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
+  font-size: 18px;
+  color: #fff;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
+.container {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10%;
+  margin: 50px;
+  background: #4c3796;
+  display: flex;
+  justify-content: center;
+}
+
+.areaButtonAdd {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+  left: 150px;
+  margin-right: 50px;
+}
+
+.listRepo {
+  margin-left: 50px;
 }
 
 div li {
@@ -22,7 +38,7 @@ div li {
   align-items: center;
 }
 
-div li + li {
+div li+li {
   margin-top: 15px;
 }
 
@@ -32,12 +48,21 @@ button {
   border: 0;
   padding: 10px 15px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 5px;
   font-weight: bold;
   font-size: 14px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+input {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 10px;
+  border-color: #8474bc;
 }
